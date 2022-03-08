@@ -1,6 +1,4 @@
-var today=new Date();
-var date= (today.getMonth()+1)+'-'+today.getDate()+'-'+today.getFullYear();
-var time = today.getHours()+':'+ today.getMinutes()+':'+today.getSeconds();
-var dateTime=date+'  '+time;
-
-document.getElementById("currentDateTime").value=dateTime;
+function My_First_Function(){
+    var str ="This is the button text!";
+    document.getElementById("Button_Text").innerHTML=str.fontcolor("blue");
+}
