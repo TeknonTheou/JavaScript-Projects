@@ -7,3 +7,18 @@ function myFunction(){ //This function changes the text of the paragraph element
     sentence += " a lot from this book!"; //concatenating text with additional wording
     document.getElementById("Concatenate").innerHTML=sentence; //setting the id which will call this function
 }
+function whatTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = newTime(m);
+    s = newTime(s);
+    document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+    setTimeout(whatTime, 1000);
+  }
+  
+  function newTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
