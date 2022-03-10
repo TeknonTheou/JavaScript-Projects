@@ -9,3 +9,4 @@ function myDictionary(){//--create Dictionary function
     delete Pet.Species; //--delete Species variable
     document.getElementById("Dictionary").innerHTML=Pet.Species; //--Result will display in HTML under id "Dictionary"
 }
+
