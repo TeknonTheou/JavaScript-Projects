@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Billy's Pizza</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script src="./Pizza_JavaScript/Pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="./Pizza_CSS/Pizza.css"/>
+		<meta name="author" content="Billy">
+	</head>
+	<body>
+        <div id="menuBG">
+			<h1 style="margin:0 0px 0 20px;">Billy's Pizza</h1>
+			<form id="frmMenu">
+				<div class="menu left">
+					<h3>Size:</h3>
+					<input class="size" type="radio" name="Size" value="Personal Pizza">Personal-$6.00<br>
+					<input class="size" type="radio" name="Size" value="Medium Pizza">Medium-$10.00<br>
+					<input class="size" type="radio" name="Size" value="Large Pizza" checked>Large-$14.00<br>
+					<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Family Size-$16.00<br>
+                    <input class="size" type="radio" name="Size" value="Gluten Free Pizza">Gluten Free-$12.00<br>
+				</div>
+                      <div class="menu center">
+		  			    <h3>Vegetables:</h3>
+					      <input class="toppings" type="checkbox" name="Topping" value="Mushrooms"> Mushrooms<br>
+					      <input class="toppings" type="checkbox" name="Topping" value="Onions"> Onions<br>
+					      <input class="toppings" type="checkbox" name="Topping" value="Tomatoes"> Tomatoes<br>
+					      <input class="toppings" type="checkbox" name="Topping" value="Olives"> Olives<br>
+					      <input class="toppings" type="checkbox" name="Topping" value="Green Peppers"> Green Peppers<br>
+				      </div>
+      				  <div class="menu right">
+		      			<h3>Meats:</h3>
+			      	      <input class="toppings" type="checkbox" name="Topping" value="Pepperoni"> Pepperoni<br>
+				      	  <input class="toppings" type="checkbox" name="Topping" value="Sausage"> Sausage <br>
+				      	  <input class="toppings" type="checkbox" name="Topping" value="Canadian Bacon"> Canadian Bacon<br      > 
+	      				  <input class="toppings" type="checkbox" name="Topping" value="Ground Beef"> Ground Beef<br>      
+			      		  <input class="toppings" type="checkbox" name="Topping" value="Bacon"> Bacon<br>
+				      	  <input class="toppings" type="checkbox" name="Topping" value="Chicken"> Chicken<br>
+      					  <input class="toppings" type="checkbox" name="Topping" value="Salami"> Salami<br>
+					</div>
+                    <p>Gluten Free Crust available in Medium size only</p>
+                    <center><h3>First topping is free! Each additional topping is $1.00</h3></center>
+                    <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+  			    <div id="cart">
+					<div id="showText"></div>
+					<div id="totalPrice"></div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
