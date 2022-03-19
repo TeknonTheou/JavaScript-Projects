@@ -8,9 +8,10 @@ function getReceipt() {
 	for (var i = 0; i < sizeArray.length; i++) {
 		if (sizeArray[i].checked) {
 			var selectedSize = sizeArray[i].value;
-			text1 = text1+selectedSize+"<br>";
+			text1 = text1+selectedSize+"<br>";//adds pizza size to order output display
 		}
 	}
+	//Determines pizza size selected, and sets starting price of pizza
 	if (selectedSize === "Personal Pizza") {
 		sizeTotal = 6;
 	} else if (selectedSize === "Medium Pizza") {
@@ -34,23 +35,23 @@ function getTopping(runningTotal,text1) {
 	var selectedTopping = [];
 	var toppingArray = document.getElementsByClassName("toppings");
 	for (var j = 0; j < toppingArray.length; j++) {
-		if (toppingArray[j].checked) {
+		if (toppingArray[j].checked) {//determine which toppings were selected
 			selectedTopping.push(toppingArray[j].value);
 			console.log("selected topping item: ("+toppingArray[j].value+")");
-			text1 = text1+toppingArray[j].value+"<br>";
+			text1 = text1+toppingArray[j].value+"<br>";//adds topping list to order output
 		}
 	}
-	var toppingCount = selectedTopping.length;
-	if (toppingCount > 1) {
-		toppingTotal = (toppingCount - 1);
+	var toppingCount = selectedTopping.length;//determines how many toppings were selected
+	if (toppingCount > 1) {//determines if any toppings selected, adds 1 to total price for each
+		toppingTotal = (toppingCount - 1);//"removes" one topping from the count (first topping free) 
 	} else {
 		toppingTotal = 0;
 	}
-	runningTotal = (runningTotal + toppingTotal);
+	runningTotal = (runningTotal + toppingTotal);//adds topping price to base pizza price
 	console.log("total selected topping items: "+toppingCount);
 	console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+".00");
 	console.log("topping text1: "+text1);
 	console.log("Purchase Total: "+"$"+runningTotal+".00");
-	document.getElementById("showText").innerHTML=text1;
-	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
+	document.getElementById("showText").innerHTML=text1;//outputs order summary (pizza size selection and all toppings)
+	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";//displays total price.
 };
