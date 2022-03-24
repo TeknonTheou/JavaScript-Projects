@@ -14,5 +14,5 @@ This project is a basic menu used to order a pizza with a selection of toppings.
 <h2>Tic-Tac-Toe Game<h2>
 Classic Tic-Tac-Toe Game, with sound effects and line drawing animation.
 
-<h2>Calculator<>
+<h2>Calculator<h2>
 A basic 4 function calculator, with add, subtract, multiply and divide functions. 
