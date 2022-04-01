@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+p {
+    font-size:large;
+}
+#mazeHolder{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#player{
+    position: absolute;
+    width:50px;
+    top:50px;
+    left:0;
+    -webkit-transition: all 0.2s;
+}
+#timeTB{
+    color: white;
+}
+

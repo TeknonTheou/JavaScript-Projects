@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+p {
+    font-size:large;
+}
+#lightning{
+    width: 65px;
+    position: absolute;
+    filter: brightness(300%);
+    z-index: 1;
+}
+
+#ufo{
+    width:65px;
+    position: absolute;
+    top:0;
+    left:0;
+    filter: brightness(300%);
+    z-index: 1;
+    transition: all 0.2s;
+}
+
+#scoreTB{
+    position:absolute;
+    color: white;
+}
+#timeTB{
+    position:absolute;
+    right: 50px;
+    color: white;
+}
