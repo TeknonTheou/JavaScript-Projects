@@ -8,6 +8,7 @@ This repository contains JavaScript projects developed by William McMillen
     <li>Calculator</li>
     <li>UFO Game</li>
     <li>Car Maze</li>
+    <li>Rock Storm</li>
 </ul>
 
 <h2>Pizza Menu</h2>
@@ -25,3 +26,5 @@ A simple game using html and JavaScript coordinate settings to move a UFO around
 <h2>Car Maze</h2>
 Guide a car through a maze using html and JavaScript coordinates and a timer to see how fast player can get through maze.
 
+<h2>Rock Storm</h2>
+Steer the ship up and down to dodge the incoming asteroids.
