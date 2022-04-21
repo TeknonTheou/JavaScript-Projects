@@ -30,5 +30,5 @@ Guide a car through a maze using html and JavaScript coordinates and a timer to 
 <h2>Rock Storm</h2>
 Steer the ship up and down to dodge the incoming asteroids.
 
-<h2>Sientific Calculator</h2>
+<h2>Scientific Calculator</h2>
 A more complex calculator, with sine, cosine, tangent, exponents, pi, square root, etc.
