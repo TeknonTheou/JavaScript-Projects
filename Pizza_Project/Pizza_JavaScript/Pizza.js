@@ -16,7 +16,7 @@ function getReceipt() {
 		sizeTotal = 6;
 	} else if (selectedSize === "Medium Pizza") {
 		sizeTotal = 10;
-    } else if (selectedSize === "Gluten Free Pizza") {
+    } else if (selectedSize === "Gluten-Free Pizza") {
 		sizeTotal = 12;
 	} else if (selectedSize === "Large Pizza") {
 		sizeTotal = 14;
